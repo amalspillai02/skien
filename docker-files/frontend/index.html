@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend</title>
+</head>
+<body>
+    <h1>Hello from Nginx Frontend</h1>
+    <p>Backend API URL: <span id="api-url"></span></p>
+    <script>
+        document.getElementById("api-url").innerText = "API URL from env: " + (window.API_URL || "Not set in browser");
+    </script>
+</body>
+</html>
